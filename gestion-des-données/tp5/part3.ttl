@@ -1,0 +1,15 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.example.org/ex/webDonnees.html>
+  rdfs:DataType <http://njh.me/example.org/Text> ;
+  dc:creator <http://www.lsis.org/sellamis> ;
+  dc:subject <http://linkeddata.org> ;
+  dc:student <http://www.example.org/webDonnees.html/student/html/> ;
+  dc:date "2018" ;
+  dc:title "SPARQL Tutorial", "Exercises" .
+
+<http://www.example.org/webDonnees.html/student/html/> dc:student <http://www.example.org/webDonnees.html/student/html/#MARC>, <http://www.example.org/webDonnees.html/student/html/#LAURIE>, <http://www.example.org/webDonnees.html/student/html/#JEAN> .
+<http://www.example.org/webDonnees.html/student/html/#MARC> dc:score "12" .
+<http://www.example.org/webDonnees.html/student/html/#LAURIE> dc:score "8" .
+<http://www.example.org/webDonnees.html/student/html/#JEAN> dc:score "20" .

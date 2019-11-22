@@ -1,0 +1,41 @@
+SELECT * FROM Hotel;
+SELECT table_name, owner FROM all_tables ORDER BY owner, table_name;   
+SELECT * FROM Chambre;
+
+UPDATE chambre
+    SET PrixC = 110
+    WHERE NumC = 1;
+    
+    
+SELECT * FROM Chambre;
+
+Commit;
+
+
+-- 12
+
+
+UPDATE chambre
+    SET PrixC = 70
+    WHERE nbplacec = 1;
+
+-- 13
+
+Commit;
+
+
+-- 15
+
+INSERT INTO Chambre (Numc,NumH,NbPlaceC,EtageC, PrixC) VALUES (7, 4, 2, 1, 80);
+INSERT INTO Chambre (Numc,NumH,NbPlaceC,EtageC, PrixC) VALUES (8, 4, 2, 2, 70);
+
+Commit;
+
+
+-- 18
+
+INSERT INTO Hotel (NumH,NomH,AdressH,TelephoneH) VALUES (7,'decal','Vigo','04 15 37 46 58');
+
+commit;
+
+SELECT * FROM Hotel;
